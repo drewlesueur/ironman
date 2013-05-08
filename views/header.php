@@ -33,6 +33,7 @@
             body {
                 padding-top: 60px;
                 padding-bottom: 40px;
+                background-color: #442525;
                 /* FF and Chrome */
                 background: linear-gradient(to bottom, #ff3236 0%,#442525 100%);
                 /* IE */
@@ -44,6 +45,11 @@
                 height: 100%;
 
             }
+            
+            .container {
+                position: relative;
+            }
+            
             .nav li {
                 padding-top: 5px;
             }
