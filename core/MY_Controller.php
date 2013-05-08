@@ -8,9 +8,10 @@ class MY_Controller extends CI_Controller {
         function __construct() {
             parent::__construct();
 
-            //used for hilighting current menu item
             preg_match('/(?P<name>\w+)\/(?P<ctrl>\w+)/', $_SERVER['REQUEST_URI'], $matches);
+            //used for highlighting current menu item in header
             $this->activeMenuItem = "class='active'";
+            //capture current controller. Used to fetch controller name, highlight menu items, generate links, etc etc 
             $this->ctrl = isset($matches['ctrl'])? $matches['ctrl'] : '';
 
         }

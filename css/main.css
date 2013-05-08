@@ -1,24 +1,19 @@
+/* item container */
 .block {
     overflow:hidden;
-    
     margin-bottom: 10px;
     zoom: 1;
-    /* RGBa with 0.4 opacity */
-
     background:transparent;   
-    zoom: 1;    /* RGBa with 0.4 opacity */    
-    background: rgba(0, 0, 0, 0.4);    /* IE6 & 7 */    
-
+    zoom: 1;
+    background: rgba(0, 0, 0, 0.4);
     padding: 20px;
-
     border-radius: 15px;
     /* firefox support */
     -moz-border-radius: 15px;
     /* OP and Chrome */
     -webkit-border-radius: 15px;
-
+    /* round corner work around for older versions of IE */
     behavior: url(/js/pie/current/PIE.htc);
-
 }
 
 .block img {
@@ -54,7 +49,9 @@ h2 a, h2 a:hover {
 .shadow {
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* firefox support */
     -moz-box-shadow: 3px 3px 4px #000;
+    /* OP and Chrome */
     -webkit-box-shadow: 3px 3px 4px #000;
     box-shadow: 3px 3px 4px #000;
     /* For IE 5.5 - 7 */

@@ -1,10 +1,17 @@
-
+/* main container for carousel container on home page */
 .flexslider {
     margin: 0;
     border: none;
     height: 460px;
 }
 
+.slides {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+/* used by left and right nav container */
 .flex-direction-nav {
     width: auto;
     margin: 0 auto;
@@ -17,6 +24,7 @@
     margin-right: -466px;
 }
 
+/* used by arrow links for left and right nav container */
 .flex-direction-nav a {
     width: 45px;
     height: 45px;
@@ -31,6 +39,7 @@
     -webkit-transition: all .3s ease;
 }
 
+/* used by skip nav controller on bottom right hand corner of carousel */
 .flex-control-nav {
     width: auto;
     margin: 0 auto;
@@ -43,6 +52,11 @@
     margin-right: -466px;
 }
 
+.flex-control-nav ol {
+    direction: rtl;
+}
+
+/* used to stylize skip nav controller */
 .flex-control-paging li a.flex-active {
     background: #fff;
     background: rgba(255,255,255,1);
@@ -69,10 +83,7 @@
     background-color: #fff;
 }
 
-.flex-control-nav ol {
-    direction: rtl;
-}
-
+/* used by container for each slide */
 .content-wrapper {
     position: relative;
     display: block;
@@ -81,6 +92,7 @@
     margin: 0 auto;
 }  
 
+/* main heading text for each slide */
 .main-slide-hdr {
     line-height: 64px;
     letter-spacing: -5px;
@@ -96,6 +108,7 @@
     text-transform: uppercase;
 } 
 
+/* sub heading text for each slide */
 .main-slide-sub-hdr {
     line-height: 35px;
     letter-spacing: -1px;
@@ -107,13 +120,6 @@
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
 }    
-
-.slides {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-
-}
 
 .content-background {
     height: 460px;

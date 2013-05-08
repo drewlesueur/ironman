@@ -19,7 +19,7 @@ class Armor extends MY_Controller {
 	}
         
 	function details($id) {
-                
+
                 $details = $this->armor->get($id);
 
                 $this->load->view('header',array('ctrl'=>$this->ctrl,'activeMenuItem'=>$this->activeMenuItem));
