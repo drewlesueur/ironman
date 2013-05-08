@@ -1,0 +1,128 @@
+
+.flexslider {
+    margin: 0;
+    border: none;
+    height: 460px;
+}
+
+.flex-direction-nav {
+    width: auto;
+    margin: 0 auto;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 0 5px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    right: 50%;
+    margin-right: -466px;
+}
+
+.flex-direction-nav a {
+    width: 45px;
+    height: 45px;
+    margin: -30px 0 0;
+    display: block;
+    background: url(/ironman/img/CarouselArrows.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+}
+
+.flex-control-nav {
+    width: auto;
+    margin: 0 auto;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 0 5px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    right: 50%;
+    margin-right: -466px;
+}
+
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    background: rgba(255,255,255,1);
+    cursor: default;
+}
+
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: transparent;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+
+.flex-control-paging li a:hover {
+    background-color: #fff;
+}
+
+.flex-control-nav ol {
+    direction: rtl;
+}
+
+.content-wrapper {
+    position: relative;
+    display: block;
+    width: 970px;
+    height: 460px;
+    margin: 0 auto;
+}  
+
+.main-slide-hdr {
+    line-height: 64px;
+    letter-spacing: -5px;
+    font-size: 82px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+    font-family: "open_sansbold", sans-serif !important;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
+} 
+
+.main-slide-sub-hdr {
+    line-height: 35px;
+    letter-spacing: -1px;
+    font-size: 30px;
+    font-family: "open_sansbold", sans-serif !important;
+    text-transform: none !important;
+    margin-bottom: 25px;
+    width: 350px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}    
+
+.slides {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+.content-background {
+    height: 460px;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    position: relative;
+    display: list-item;
+    background-color: rgb(0, 0, 0);
+    background-position: 50% 0%;
+    background-repeat: repeat no-repeat;        
+}

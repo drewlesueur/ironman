@@ -1,0 +1,62 @@
+.block {
+    overflow:hidden;
+    
+    margin-bottom: 10px;
+    zoom: 1;
+    /* RGBa with 0.4 opacity */
+
+    background:transparent;   
+    zoom: 1;    /* RGBa with 0.4 opacity */    
+    background: rgba(0, 0, 0, 0.4);    /* IE6 & 7 */    
+
+    padding: 20px;
+
+    border-radius: 15px;
+    /* firefox support */
+    -moz-border-radius: 15px;
+    /* OP and Chrome */
+    -webkit-border-radius: 15px;
+
+    behavior: url(/js/pie/current/PIE.htc);
+
+}
+
+.block img {
+    width: 100px;
+}
+
+.block p {
+    color: white;
+}
+
+.block div:first-child{
+    float: left; width: auto;
+}
+
+.block div:nth-child(2){
+    float: right;
+}
+
+h3, h3 a, h3 a:hover {
+    font-family: "open_sansbold", sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: yellow;
+}
+    
+h2 a, h2 a:hover {
+    font-family: "open_sansbold", sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.shadow {
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}    
