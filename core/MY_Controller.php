@@ -6,6 +6,7 @@ class MY_Controller extends CI_Controller {
         protected $ctrl;
     
         function __construct() {
+
             parent::__construct();
 
             preg_match('/(?P<name>\w+)\/(?P<ctrl>\w+)/', $_SERVER['REQUEST_URI'], $matches);
